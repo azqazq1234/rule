@@ -1,6 +1,6 @@
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,apple-relay
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,chatgpt
+DOMAIN-KEYWORD,oaistatic
+DOMAIN-KEYWORD,oaiusercontent
+DOMAIN-KEYWORD,auth0
+DOMAIN-KEYWORD,apple-relay
