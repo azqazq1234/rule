@@ -1,0 +1,70 @@
+#default config
+#Date: 2022.06.01
+#Author: Loon
+
+[General]
+ipv6-vif = off
+disconnect-on-policy-change = true
+ip-mode = v4-only
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+dns-server = system
+allow-wifi-access = false
+wifi-access-http-port = 7222
+wifi-access-socks5-port = 7221
+proxy-test-url = http://bing.com/generate_204
+internet-test-url = http://wifi.vivo.com.cn/generate_204
+test-timeout = 3
+interface-mode = auto
+
+[Proxy]
+
+[Remote Proxy]
+E-IX = https://api.usfoo.com/api/v1/message?token=7d382f8620cae1e2023982a53765c96a&name=E-IX,udp=true,block-quic=true,fast-open=default,vmess-aead=default,skip-cert-verify=true,enabled=true,flexible-sni=true
+
+[Proxy Chain]
+
+[Proxy Group]
+Available = select,ALL_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+JP = fallback,JP_Filter,interval = 10,max-timeout = 500,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+HK = fallback,HK_Filter,interval = 10,max-timeout = 500,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+MACAU = select,MACAO_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+TW = select,TW_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+SG = select,SG_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+US = select,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+KR = select,KR_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+
+[Remote Filter]
+ALL_Filter = NameRegex, FilterKey = ".*"
+JP_Filter = NameRegex, FilterKey = "(?i)(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)"
+HK_Filter = NameRegex, FilterKey = "(?i)(港|HK|Hong)"
+SG_Filter = NameRegex, FilterKey = "(?i)(新加坡|坡|狮城|SG|Singapore)"
+MACAO_Filter = NameRegex,E-IX, FilterKey = "(?i)(澳门|Macao)"
+TW_Filter = NameRegex, FilterKey = "(?i)(台|TW|Tai)"
+KR_Filter = NameRegex, FilterKey = "(?i)(KR|Korea|KOR|首尔|韩|韓)"
+US_Filter = NameRegex, FilterKey = "(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)"
+
+[Rule]
+#Type:DOMAIN-SUFFIX,DOMAIN,DOMAIN-KEYWORD,USER-AGENT,URL-REGEX,IP-CIDR
+#Strategy:DIRECT,PROXY,REJECT
+#Options:no-resolve(only for IP-CIDR,IP-CIDR2,GEOIP,IP-ASN)
+
+FINAL,HK
+
+[Remote Rule]
+https://raw.githubusercontent.com/azqazq1234/rule/refs/heads/main/direct.list, policy=DIRECT, tag=Direct, enabled=true
+https://raw.githubusercontent.com/azqazq1234/rule/refs/heads/main/proxy.list, policy=HK, tag=Proxy, enabled=true
+https://raw.githubusercontent.com/azqazq1234/rule/refs/heads/main/gpt.list, policy=JP, tag=Gpt, enabled=true
+https://raw.githubusercontent.com/azqazq1234/rule/refs/heads/main/apple_gpt.list, policy=JP, tag=Apple_gpt, enabled=true
+https://raw.githubusercontent.com/meslcloud/Rule/refs/heads/main/Surge/Youtube.list, policy=MACAU, tag=Youtube, enabled=true
+https://raw.githubusercontent.com/Loon0x00/LoonLiteRules/main/direct/cn.list, policy=DIRECT, tag=GEOIP_CN, enabled=true
+
+[Rewrite]
+
+[Script]
+
+[Plugin]
+[Mitm]
+ca-p12 = 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
+ca-passphrase = 4GYRN5G8
+skip-server-cert-verify = false
