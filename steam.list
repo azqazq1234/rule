@@ -1,0 +1,22 @@
+# Steam 商店、登录、支付、客服及 API
+# 不使用 DOMAIN-KEYWORD,steam 或 DOMAIN-SUFFIX,steampowered.com，避免匹配游戏下载域名。
+DOMAIN,steampowered.com
+DOMAIN,www.steampowered.com
+DOMAIN,store.steampowered.com
+DOMAIN,checkout.steampowered.com
+DOMAIN,login.steampowered.com
+DOMAIN,help.steampowered.com
+DOMAIN,api.steampowered.com
+
+# Steam 社区、聊天及短链接
+DOMAIN-SUFFIX,steamcommunity.com
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,s.team
+
+# 商店及社区页面静态资源
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN,steamcommunity-a.akamaihd.net
+DOMAIN,steamstore-a.akamaihd.net
+DOMAIN,steamuserimages-a.akamaihd.net
+
+# 不包含 steamcontent.com、steamserver.net、游戏下载 CDN 或下载进程规则。
