@@ -7,8 +7,3 @@ DOMAIN-KEYWORD,streamtheworld
 DOMAIN-KEYWORD,rednote
 DOMAIN-KEYWORD,speedtest
 DOMAIN-SUFFIX,ookla.com
-# Steam CDN、连接管理及内容服务器直连
-DOMAIN,steamcdn-a.akamaihd.net
-DOMAIN-SUFFIX,cm.steampowered.com
-DOMAIN-SUFFIX,steamserver.net
-DOMAIN-SUFFIX,steamcontent.com
