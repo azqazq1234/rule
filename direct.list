@@ -13,3 +13,15 @@ DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,steamcontent.com
+
+# Microsoft Teams 及音视频通话直连
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,teams.cloud.microsoft
+DOMAIN-SUFFIX,lync.com
+DOMAIN-SUFFIX,skype.com
+DOMAIN,join.secure.skypeassets.com
+DOMAIN,mlccdnprod.azureedge.net
+DOMAIN-SUFFIX,keydelivery.mediaservices.windows.net
+DOMAIN-SUFFIX,streaming.mediaservices.windows.net
+IP-CIDR,52.112.0.0/14,no-resolve
+IP-CIDR,52.122.0.0/15,no-resolve
