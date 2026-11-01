@@ -8,6 +8,8 @@ DOMAIN-KEYWORD,speedtest
 DOMAIN-KEYWORD,azqazq1234
 DOMAIN-SUFFIX,ookla.com
 DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN,myip.ipip.net
+DOMAIN,alidns.aliyuncs.com
 
 # Steam CDN、连接管理及内容服务器直连
 DOMAIN,steamcdn-a.akamaihd.net
