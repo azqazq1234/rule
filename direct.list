@@ -2,29 +2,14 @@ DOMAIN-KEYWORD,zuhedaikuan
 DOMAIN-KEYWORD,libvio
 DOMAIN-KEYWORD,zimuku
 DOMAIN-KEYWORD,oldmanemu
-DOMAIN-KEYWORD,huacloud
-DOMAIN-KEYWORD,streamtheworld
-DOMAIN-KEYWORD,speedtest
 DOMAIN-KEYWORD,azqazq1234
-DOMAIN-SUFFIX,ookla.com
-DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-KEYWORD,huacloud
+DOMAIN-KEYWORD,speedtest
+DOMAIN-KEYWORD,ookla
 DOMAIN,myip.ipip.net
 DOMAIN,alidns.aliyuncs.com
 
-# Steam CDN、连接管理及内容服务器直连
-DOMAIN,steamcdn-a.akamaihd.net
-DOMAIN-SUFFIX,cm.steampowered.com
-DOMAIN-SUFFIX,steamserver.net
+# Steam
 DOMAIN-SUFFIX,steamcontent.com
-
-# Microsoft Teams 及音视频通话直连
-DOMAIN-SUFFIX,teams.microsoft.com
-DOMAIN-SUFFIX,teams.cloud.microsoft
-DOMAIN-SUFFIX,lync.com
-DOMAIN-SUFFIX,skype.com
-DOMAIN,join.secure.skypeassets.com
-DOMAIN,mlccdnprod.azureedge.net
-DOMAIN-SUFFIX,keydelivery.mediaservices.windows.net
-DOMAIN-SUFFIX,streaming.mediaservices.windows.net
-IP-CIDR,52.112.0.0/14,no-resolve
-IP-CIDR,52.122.0.0/15,no-resolve
+DOMAIN,steampipe.akamaized.net
+DOMAIN,steamcdn-a.akamaihd.net

@@ -1,19 +1,18 @@
-# Steam 商店、登录、支付、客服及 API
-DOMAIN,steampowered.com
-DOMAIN,www.steampowered.com
-DOMAIN,store.steampowered.com
-DOMAIN,checkout.steampowered.com
-DOMAIN,login.steampowered.com
-DOMAIN,help.steampowered.com
-DOMAIN,api.steampowered.com
+# 商店、登录、支付、客服、API 及旧版 CM 地址
+DOMAIN-SUFFIX,steampowered.com
 
-# Steam 社区、聊天及短链接
+# 客户端连接管理服务器
+DOMAIN-SUFFIX,steamserver.net
+
+# 社区、聊天及短链接
 DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,steam-chat.com
 DOMAIN-SUFFIX,s.team
 
-# 商店及社区页面静态资源
+# 页面及用户内容资源
 DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steamusercontent.com
+DOMAIN-SUFFIX,steamgames.com
 DOMAIN,steamcommunity-a.akamaihd.net
 DOMAIN,steamstore-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
