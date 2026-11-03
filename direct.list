@@ -11,5 +11,5 @@ DOMAIN,alidns.aliyuncs.com
 
 # Steam
 DOMAIN-SUFFIX,steamcontent.com
-DOMAIN,steampipe.akamaized.net
-DOMAIN,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,cs.steampowered.com
