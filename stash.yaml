@@ -1,0 +1,806 @@
+#SUBSCRIBED https://api.usfoo.com/api/v1/message?token=7d382f8620cae1e2023982a53765c96a
+mode: rule
+log-level: info
+ipv6: false
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - system
+  nameserver:
+    - https://zone.rlose.com:39933/api-query
+    - https://radar.rlose.com/api-query
+  fallback:
+    - system
+  fallback-filter:
+    geoip: false
+    ipcidr: []
+    domain: []
+  fake-ip-filter:
+    - "+.lan"
+    - "+.local"
+    - "localhost"
+    - "captive.apple.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "time.*.apple.com"
+    - "+.pool.ntp.org"
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.stun.*.*.*.*.*"
+    - "*.turn.twilio.com"
+    - "*.mcdn.bilivideo.cn"
+    - "nas.azqazq1234.xyz"
+proxies:
+  - {
+      name: "🇭🇰 Hong Kong 01",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 53101,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇭🇰 Hong Kong 02",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 53102,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇭🇰 Hong Kong 03",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 53103,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇭🇰 Hong Kong 04",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 53104,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇭🇰 Hong Kong 05",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 53105,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇭🇰 Hong Kong 06",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 53106,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇭🇰 Hong Kong 07",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 53107,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇲🇴 Macao",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43131,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇨🇳 Taiwan 01",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43111,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇨🇳 Taiwan 02",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43112,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇨🇳 Taiwan 03",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43113,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇨🇳 Taiwan 04",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43114,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇨🇳 Taiwan 05",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43115,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇸🇬 Singapore 01",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43121,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇸🇬 Singapore 02",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43122,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇸🇬 Singapore 03",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43123,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇸🇬 Singapore 04",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43124,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇲🇾 Malaysia",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43132,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇹🇭 Thailand",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43133,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇵🇭 Philippines",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43134,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇻🇳 Vietnam",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43135,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇮🇩 Indonesia",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43136,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇦🇺 Australia 01",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43137,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇦🇺 Australia 02",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43138,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇳🇿 New Zealand",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43139,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇯🇵 Japan 01",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 53201,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇯🇵 Japan 02",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 53202,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇯🇵 Japan 03",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 53203,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇯🇵 Japan 04",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 53204,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇯🇵 Japan 05",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 53205,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇯🇵 Japan 06",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 53206,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇰🇷 Korea 01",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43211,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇰🇷 Korea 02",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43212,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇰🇷 Korea 03",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43213,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇺🇸 United States 01",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43221,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇺🇸 United States 02",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43222,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇺🇸 United States 03",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43223,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇺🇸 United States 04",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43224,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇺🇸 United States 05",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43225,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇺🇸 United States 06",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43226,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇨🇦 Canada",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43231,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇲🇽 Mexico",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43232,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇧🇷 Brazil",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43233,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇦🇷 Argentina",
+      type: anytls,
+      server: 9d3b0f682a14.eixcloud.com,
+      port: 43234,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: d1.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇩🇪 Germany 01",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53301,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇩🇪 Germany 02",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53302,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇬🇧 United Kingdom 01",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53303,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇬🇧 United Kingdom 02",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53304,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇫🇷 France",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53305,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇳🇱 Netherlands",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53306,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇮🇹 Italia",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53307,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇮🇪 Ireland",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53308,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇧🇪 Belgium",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53309,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇫🇮 Finland",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53310,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇳🇴 Norway",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53311,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇸🇪 Sweden",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53312,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇪🇸 Spain",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53313,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇭🇺 Hungary",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53314,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇷🇴 Romania",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53315,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇷🇺 Russia",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53316,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇺🇦 Ukraine",
+      type: anytls,
+      server: 2a9c7e415d68.eixcloud.com,
+      port: 53317,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+  - {
+      name: "🇿🇦 South Africa",
+      type: anytls,
+      server: 8e3f7b290d64.eixcloud.com,
+      port: 43318,
+      password: 8127c8dd-5628-4937-93a2-f4cea324cff1,
+      client-fingerprint: chrome,
+      sni: rds.dirvt.com,
+      skip-cert-verify: false,
+    }
+
+proxy-groups:
+  - name: FINAL
+    type: select
+    proxies: [PROXY, HK, JP, DIRECT]
+  - name: PROXY
+    type: select
+    proxies: [HK, JP, SG, TW, MACAO, OTHER]
+  - name: JP
+    type: url-test
+    include-all: true
+    filter: "Japan"
+    url: http://cp.cloudflare.com/generate_204
+    interval: 900
+    tolerance: 100
+    lazy: true
+  - name: HK
+    type: url-test
+    include-all: true
+    filter: "Hong Kong"
+    url: http://cp.cloudflare.com/generate_204
+    interval: 900
+    tolerance: 100
+    lazy: true
+  - name: SG
+    type: url-test
+    include-all: true
+    filter: "Singapore"
+    url: http://cp.cloudflare.com/generate_204
+    interval: 900
+    tolerance: 100
+    lazy: true
+  - name: TW
+    type: url-test
+    include-all: true
+    filter: "Taiwan"
+    url: http://cp.cloudflare.com/generate_204
+    interval: 900
+    tolerance: 100
+    lazy: true
+  - name: MACAO
+    type: url-test
+    include-all: true
+    filter: "Macao"
+    url: http://cp.cloudflare.com/generate_204
+    interval: 900
+    tolerance: 100
+    lazy: true
+  - name: OTHER
+    type: url-test
+    proxies:
+      - "🇲🇾 Malaysia"
+      - "🇹🇭 Thailand"
+      - "🇵🇭 Philippines"
+      - "🇻🇳 Vietnam"
+      - "🇮🇩 Indonesia"
+      - "🇦🇺 Australia 01"
+      - "🇦🇺 Australia 02"
+      - "🇳🇿 New Zealand"
+      - "🇰🇷 Korea 01"
+      - "🇰🇷 Korea 02"
+      - "🇰🇷 Korea 03"
+      - "🇺🇸 United States 01"
+      - "🇺🇸 United States 02"
+      - "🇺🇸 United States 03"
+      - "🇺🇸 United States 04"
+      - "🇺🇸 United States 05"
+      - "🇺🇸 United States 06"
+      - "🇨🇦 Canada"
+      - "🇲🇽 Mexico"
+      - "🇧🇷 Brazil"
+      - "🇦🇷 Argentina"
+      - "🇩🇪 Germany 01"
+      - "🇩🇪 Germany 02"
+      - "🇬🇧 United Kingdom 01"
+      - "🇬🇧 United Kingdom 02"
+      - "🇫🇷 France"
+      - "🇳🇱 Netherlands"
+      - "🇮🇹 Italia"
+      - "🇮🇪 Ireland"
+      - "🇧🇪 Belgium"
+      - "🇫🇮 Finland"
+      - "🇳🇴 Norway"
+      - "🇸🇪 Sweden"
+      - "🇪🇸 Spain"
+      - "🇭🇺 Hungary"
+      - "🇷🇴 Romania"
+      - "🇷🇺 Russia"
+      - "🇺🇦 Ukraine"
+      - "🇿🇦 South Africa"
+    url: http://cp.cloudflare.com/generate_204
+    interval: 900
+    tolerance: 100
+    lazy: true
+  - name: AI
+    type: select
+    proxies: [JP, SG, TW, PROXY]
+  - name: Youtube
+    type: url-test
+    include-all: true
+    filter: Macao
+    url: http://cp.cloudflare.com/generate_204
+    interval: 900
+    tolerance: 100
+    lazy: true
+
+rule-providers:
+  direct:
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/azqazq1234/rule/refs/heads/main/direct.list
+    interval: 86400
+  proxy:
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/azqazq1234/rule/refs/heads/main/proxy.list
+    interval: 86400
+  gpt:
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/azqazq1234/rule/refs/heads/main/gpt.list
+    interval: 86400
+  youtube:
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/meslcloud/Rule/refs/heads/main/Surge/Youtube.list
+    interval: 86400
+
+rules:
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,gpt,AI
+  - RULE-SET,youtube,Youtube
+  - DOMAIN,localhost,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,lan,DIRECT
+  - IP-CIDR,0.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,ff00::/8,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
+  - MATCH,FINAL
