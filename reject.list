@@ -1,6 +1,6 @@
 #bilibili
-DOMAIN-WILDCARD,*pcdn*.biliapi.net,REJECT
-DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT
-DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT
-DOMAIN-SUFFIX,szbdyd.com,REJECT
-DOMAIN-SUFFIX,mountaintoys.cn,REJECT
+DOMAIN-WILDCARD,*pcdn*.biliapi.net
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+DOMAIN-SUFFIX,mcdn.bilivideo.com
+DOMAIN-SUFFIX,szbdyd.com
+DOMAIN-SUFFIX,mountaintoys.cn
